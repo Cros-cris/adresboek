@@ -1,0 +1,16 @@
+body {
+  background-image: url();
+background-size: cover;
+background-position: ;
+font-family: cursive;
+}
+table {border-collapse: collapse;
+}
+
+td {
+  color: black
+}
+th {background-color: steelblue}
+table, th, td {
+  border: 1px solid black;
+}

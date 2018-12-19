@@ -1,0 +1,317 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+    </head>
+<style media="screen">
+  [contenteditable] {
+    -webkit-user-select:text;
+    user-select:text;
+  }
+</style>
+  <body>
+    <div class="asd">
+    <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Filter..">
+    <input id="myNewName" type="text" placeholder="name...">
+    <input id="myNewstate" type="tex" placeholder="stad..">
+    <input id="myNewPhone" type="tex" placeholder="phone..">
+    <input id="myNewDate" type="tex" placeholder="date..">
+    <input id="myNewImgFile" type="file" placeholder="url..">
+    <button onclick="voegToe()">add</button>
+  </div>
+  <br>
+  <div class="gegevens">
+  <table id="myTable">
+    <tr>
+     <th>naam</th>
+     <th>woonplaats</th>
+     <th>telefoon/mobiele</th>
+     <th>geboortedatun</th>
+     <th>foto</th>
+    </tr>
+    <tr>
+      <td>Cris</td>
+      <td>Enschede</td>
+      <td>0622006639</td>
+      <td>26-10-1981</td>
+      <td><img src="KOf0A+TSToeSv5cUFMbRvw_thumb_2c1.jpg" width="35px" height="35px"></td>
+    </tr>
+    <tr>
+      <td>Chelan</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bernard</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Douglas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Constant</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Christiaan</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jeroen</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rene</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clemens</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Martijn</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Marcella</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Richard</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Frans</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anke</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Simone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Paul</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eline</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan-Willem</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jack</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Maha</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eef</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Semhar</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Semere</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>contant</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gerd</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dhiradj</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Maarten</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bart</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ralp</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <script>
+    function voegToe() {
+        var mytr = document.createElement("tr");
+        var mytd1 = document.createElement("td");
+        var mytd2 = document.createElement("td");
+        var mytd3 = document.createElement("td");
+        var mytd4 = document.createElement("td");
+        var mytd5 = document.createElement("td");
+        var sNaam = document.getElementById("myNewName").value;
+        var sStad = document.getElementById("myNewstate").value;
+        var sPhone = document.getElementById("myNewPhone").value;
+        var sDate = document.getElementById("myNewDate").value;
+        var sImgFile = document.getElementById("myNewImgFile").value;
+
+      //  var textnode = document.createTextNode(sNaam);
+      mytd1.innerHTML = sNaam;
+      mytd2.innerHTML = sStad;
+      mytd3.innerHTML = sPhone;
+      mytd4.innerHTML = sDate;
+      mytd5.innerHTML = '<img src="'+sImgFile+'" width="35px" height="35px">';
+      mytr.appendChild(mytd1);
+      mytr.appendChild(mytd2);
+      mytr.appendChild(mytd3);
+      mytr.appendChild(mytd4);
+      mytr.appendChild(mytd5);
+        document.getElementById("myTable").appendChild(mytr);
+        }
+
+
+
+
+
+        function myFilterFunction() {
+          var sSearchWord = document.getElementById("myFilterBox").value;
+          console.log(sSearchWord);
+        }
+
+      function myFilterFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          var mytd1 = document.getElementsByTagName("td");
+          input = document.getElementById("myFilterBox");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myList");
+          tr = document.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+              txtValue = tr[i].innerHTML;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+              } else {
+                  tr[i].style.display = "none";
+              }
+          }
+      }
+$("td").each(function(){
+  $(this).attr("contenteditable", "true");
+})
+  </script>
+  </body>
+</html>
