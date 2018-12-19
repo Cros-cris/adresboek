@@ -9,17 +9,18 @@
   }
 </style>
   <body>
-    
-hallo
+
 <div class="asd">
     <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Filter..">
     <input id="myNewName" type="text" placeholder="name...">
-    <input id="myNewstate" type="tex" placeholder="stad..">
-    <input id="myNewPhone" type="tex" placeholder="phone..">
-    <input id="myNewDate" type="tex" placeholder="date..">
+    <input id="myNewstate" type="text" placeholder="stad..">
+    <input id="myNewPhone" type="number" placeholder="phone..">
+    <input id="myNewDate" type="date" name="bday" placeholder="date..">
     <input id="myNewImgFile" type="file" placeholder="url..">
     <button onclick="voegToe()">add</button>
   </div>
+  <br>
+  <br>
   <br>
   <div class="gegevens">
   <table id="myTable">
@@ -255,7 +256,10 @@ hallo
       <td></td>
     </tr>
   </table>
-  </div>
+</div>
+<div class="img">
+<img src="http://code-concept.nl/images/home/codegorilla-logo.png"/>
+</div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
   <script>
