@@ -1,6 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
 <style media="screen">
   [contenteditable] {
@@ -16,8 +17,8 @@
     <input id="myNewstate" type="text" placeholder="stad..">
     <input id="myNewPhone" type="number" placeholder="phone..">
     <input id="myNewDate" type="date" name="bday" placeholder="date..">
-    <input id="myNewImgFile" type="file" placeholder="url..">
-    <button onclick="voegToe()">add</button>
+    <input id="myNewUrl" type="text" placeholder="url..">
+    <button onclick="voegToe();" type="button" class="btn btn-outline-primary">add</button>
   </div>
   <br>
   <br>
@@ -261,6 +262,8 @@
 <img src="http://code-concept.nl/images/home/codegorilla-logo.png"/>
 </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   <script>
     function voegToe() {
@@ -274,14 +277,14 @@
         var sStad = document.getElementById("myNewstate").value;
         var sPhone = document.getElementById("myNewPhone").value;
         var sDate = document.getElementById("myNewDate").value;
-        var sImgFile = document.getElementById("myNewImgFile").value;
+        var sImg = document.getElementById("myNewUrl").value;
 
       //  var textnode = document.createTextNode(sNaam);
       mytd1.innerHTML = sNaam;
       mytd2.innerHTML = sStad;
       mytd3.innerHTML = sPhone;
       mytd4.innerHTML = sDate;
-      mytd5.innerHTML = '<img src="'+sImgFile+'" width="35px" height="35px">';
+      mytd5.innerHTML = '<img src="'+ sImg +'" width="35px" height="35px">';
       mytr.appendChild(mytd1);
       mytr.appendChild(mytd2);
       mytr.appendChild(mytd3);
