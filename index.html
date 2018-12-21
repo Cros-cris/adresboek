@@ -11,13 +11,13 @@
 </style>
   <body>
 
-<div class="asd">
+<div id="asd">
     <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Filter..">
     <input id="myNewName" type="text" placeholder="name...">
-    <input id="myNewstate" type="text" placeholder="stad..">
-    <input id="myNewPhone" type="number" placeholder="phone..">
-    <input id="myNewDate" type="date" name="bday" placeholder="date..">
-    <input id="myNewUrl" type="text" placeholder="url..">
+    <input id="myNewstate" type="text" placeholder="stad...">
+    <input id="myNewPhone" type="number" placeholder="phone...">
+    <input id="myNewDate" type="date" name="bday" placeholder="date...">
+    <input id="myNewUrl" type="text" placeholder="url...">
     <button onclick="voegToe();" type="button" class="btn btn-outline-primary">add</button>
   </div>
   <br>
@@ -290,12 +290,8 @@
       mytr.appendChild(mytd3);
       mytr.appendChild(mytd4);
       mytr.appendChild(mytd5);
-        document.getElementById("myTable").appendChild(mytr);
-        }
-
-
-
-
+      document.getElementById("myTable").appendChild(mytr);
+    }
 
         function myFilterFunction() {
           var sSearchWord = document.getElementById("myFilterBox").value;
@@ -318,6 +314,11 @@
               }
           }
       }
+      $(document).ready(function(){
+      $(".btn").click(function(){
+        $('input').val("");
+        });});
+
 $("td").each(function(){
   $(this).attr("contenteditable", "true");
 })
