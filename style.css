@@ -1,26 +1,31 @@
 body {
-  background-image: url(http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503013-1600-1200.jpg);
+  background: url(http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503013-1600-1200.jpg);
 background-size: cover;
-background-position: ;
+background-position: center ;
 font-family: cursive;
 }
 
-.asd{
-  margin-left: 75px;
+#asd{
+  margin-left: 70px;
   margin-top: 20px;
 }
 
 
-table {border-collapse: collapse;
+table {
+  border-collapse: collapse;
 transform: scale(1.1);
-margin-left: 40px;
-
+margin-left: 75px;
+float: left;
+margin: 50px;
+padding-left: 20px;
 }
 .img {
-  position:fixed;
-  top: 100px;
-  right: 200px;
+  float: left;
+  margin: 30px;
 }
+
+
+
 td {
   color: steelblue
 }

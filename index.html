@@ -17,7 +17,7 @@
     <input id="myNewstate" type="text" placeholder="stad...">
     <input id="myNewPhone" type="number" placeholder="phone...">
     <input id="myNewDate" type="date" name="bday" placeholder="date...">
-    <input id="myNewUrl" type="text" placeholder="url...">
+    <input id="myNewUrl" type="text" placeholder="img url...">
     <button onclick="voegToe();" type="button" class="btn btn-outline-primary">add</button>
   </div>
   <br>
@@ -259,7 +259,7 @@
   </table>
 </div>
 <div class="img">
-<img src="http://code-concept.nl/images/home/codegorilla-logo.png"/>
+<img  class="img-fluid" src="http://code-concept.nl/images/home/codegorilla-logo.png"/>
 </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -314,10 +314,10 @@
               }
           }
       }
-      $(document).ready(function(){
+   $('#asd').ready(function(){
       $(".btn").click(function(){
         $('input').val("");
-        });});
+      });});
 
 $("td").each(function(){
   $(this).attr("contenteditable", "true");
